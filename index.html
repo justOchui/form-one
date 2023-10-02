@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-NG">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Registration form</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <header>
+          <h1>DGLS HQ</h1>
+          <p class="description">Thank you for chosing us and signing up on our platform.<br /> 
+            Expect the best of services from us, as we are providing you with the best is our commitment.
+          </p>
+        </header>
+        <div class="form">
+        <form method="post" enctype="text/plain" action="#submit">
+            <!-- First fieldset -->
+            <fieldset>
+                <legend>Personia</legend>
+                <!-- First input field -->
+                <label>Fisrtname:
+                    <input type="text" id="fname" name="fname" placeholder="Enter firstname here" required />
+                </label>
+                <!-- Second input field  -->
+                <label>Lastname:
+                    <input type="text" id="lname" name="lname" placeholder="Enter lastname here" required />
+                </label>
+                <!-- Third input field -->
+                <label>
+                    <input type="radio" id="gender" name="gender" value="male" required />Male
+                </label>
+                <!-- Fourth input field -->
+                <label>
+                    <input type="radio" id="gender" name="gender" value="female" required />Female
+                </label>
+                <!-- Fifth input field -->
+                <label>Age:
+                    <input type="number" id="age" name="age" min="18" max="65" placeholder="Enter values between 18 and 65" />
+                </label>
+            </fieldset>
+            <!-- Second fieldset -->
+            <fieldset>
+                <legend>Contact</legend>
+                <p>You may chose between email and phone</p>
+                <!-- First input field -->
+                <label>Email:
+                    <input type="email" id="email" name="email" placeholder="name@example.com" />
+                </label>
+                <!-- Second input field -->
+                <label>Phone:
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" placeholder="(+234)9078570096" />
+                </label>
+                <!-- Third input field -->
+                <label>Password:
+                    <input type="password" id="password" name="pasword" minlength="8" required />
+                </label>
+            </fieldset>
+            <!-- Third fieldset -->
+            <fieldset>
+                <legend>Terms</legend>
+                <p>How did you get to hear about us?</p>
+                <!-- First input [ <select> in particular ] field -->
+                <select name="source">
+                    <option value="friend">From a friend</option>
+                    <option value="socials">From a social media advert</option>
+                    <option value="news">From the news</option>
+                    <option value="" selected>Select one of the following options</option>
+                </select>
+                <!-- Second input field -->
+                <label>
+                    <input type="checkbox" id="terms" name="terms" required /> I have read and hereby agree to your 
+                    <a href="#terms">terms and conditions</a>
+                </label>
+            </fieldset>
+            <!-- Submit button -->
+            <input type="submit" value="Register" title="Click to register details on our server" />
+        </form>
+        </div>
+        <hr />
+        <footer>
+            <p style="float: right; padding-right: 2rem;">Developed with love in <a href="">Nigeria</a> by 
+            <a href="https://twitter.com/Sixtyn_Elevyn">Sixtyn Elevyn</a></p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,115 @@
+/* Body */
+body {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background-color: #2f2f3a;
+    color: beige;
+}
+
+/* Header */
+header {
+    border: 2px solid chocolate;
+    border-radius: 20px 0 20px 0;
+    width: 65vw;
+    min-width: 250px;
+    max-width: 700px;
+    margin: 2rem auto;
+}
+
+h1, .description {
+    text-align: center;
+}
+
+h1 {
+    color: rgb(255, 127, 0);
+    text-decoration: overline;
+    filter: blur(0.8px);
+    transform: rotate(-3deg);
+    box-shadow: 0 0 3px 3px;
+    width: 47%;
+    max-width: 90px;
+    margin: 2rem auto;
+    font-family: Impact;
+}
+
+.description {
+    color: rgb(255, 255, 255);
+}
+
+/* Form */
+.form {
+    width: 60vw;
+    min-width: 250px;
+    max-width: 500px;
+    margin: 1.1em auto;
+    padding: 0 0 2rem 0;
+}
+
+/* Form fieldset */
+fieldset {
+    border: none;
+    border-bottom: 3px solid;
+    border-color: chocolate;
+    margin: 2rem 0 0 0;
+    padding: 0 0 2rem 0;
+}
+
+legend {
+    text-decoration: underline;
+    font-size: larger;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+fieldset:last-of-type {
+    border: none;
+}
+
+/* Form input fields */
+label {
+    display: block;
+    margin: 1rem 0 0 0;
+}
+
+input, select {
+    width: 100%;
+    height: 2em;
+    background-color: hsl(0, 5%, 50%);
+    color:rgb(255, 255, 255);
+    border-color: hsl(0, 5%, 50%);
+    border-radius: 5px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    width: unset;
+    height: initial;
+    vertical-align: middle;
+    margin: 0 1.1em 0 0;
+}
+
+a {
+    color:rgb(255, 127, 0);
+}
+
+input[type="submit"] {
+    width: 50%;
+    min-height: 2.5rem;
+    max-width: 175px;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0 0 3px 2px chocolate;
+    font-size: larger;
+}
+
+input[type="submit"]:hover {
+    max-width: 170px;
+    font-size: large;
+}
+
+/* Footer */
+hr {
+    width: 98%;
+    height: 2px;
+    border-color: chocolate;
+    background-color: chocolate;
+}
